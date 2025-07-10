@@ -1,0 +1,116 @@
+* {
+    font-family: Oswald;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 5%;
+    background-color: #191919;
+    font-family: Arial, sans-serif;
+}
+.left-section {
+    display: flex;
+    gap: 20px;
+}
+.center-section {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.right-section {
+    display: flex;
+    gap: 20px;
+}
+.logo {
+    height: 40px;
+    width: auto;
+    border-radius: 5px;
+}
+a {
+    text-decoration: none;
+    color: #2EC56D;
+    font-weight: 500;
+    transition: color 0.3s;
+    white-space: nowrap;
+}
+
+body {
+    background-color: #101010;
+}
+#friendsBlock {
+    overflow-y: scroll;
+    border-radius: 10px;
+    text-align: center;
+    background-color: #2F3132;
+    width: 70vh;
+    height: 75vh;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 10vh;
+    margin-left: 65vh;
+}
+#friendsBlock h1 {
+    color: #2EC56D;
+}
+#lineHeader {
+    
+    margin-top: 10px;
+}
+.friend {
+    border-radius: 9px;
+    color: aliceblue;
+    display: flex;
+    justify-content: space-between;
+    background-color: #000000;
+    min-width: 60%;
+    max-width: 85%;
+    height: 7%;
+    margin-left: 7%;
+    margin-top: 5%;
+}
+.openChat {
+    border: none;
+    border-radius: 5px;
+    background-color: #2EC56D;
+    margin-top: 7px;
+    margin-right: 5%;
+    max-height: 70%;
+    min-width: 6%;
+}
+.openChat:hover {
+    background-color: #219451;
+}
+.decencyAmount {
+    color: #8DEEB5;
+    margin-top: 2%;
+}
+.nickname {
+    color: #8DEEB5;
+    margin-top: 2%;
+}
+#footerContent {
+    background-color: black;
+    width: 100%;
+    height: 150px;
+    color: white;
+    padding-top: 20px;
+    padding-left: 20px;
+    margin-top: 10%;
+}
+.centerSectionFooter {
+    text-align: center;
+}
+.contactsFooter {
+    align-items: center;
+}
+.contacts {
+    display: inline;
+    text-align: center;  
+}
