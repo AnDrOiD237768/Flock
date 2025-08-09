@@ -44,6 +44,53 @@ a {
 body {
     background-color: #101010;
 }
+html, body { height: 100%; }
+#mainContent {
+    min-height: calc(100vh - 150px - 60px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+.authContainer { width: 100%; max-width: 560px; }
+.authCard {
+    background: #1A1A1A;
+    border-radius: 14px;
+    padding: 24px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.35);
+}
+.authTitle { color: #2EC56D; text-align: center; margin-bottom: 16px; font-size: 36px; }
+.authForm { display: flex; flex-direction: column; gap: 12px; }
+.authField { display: flex; flex-direction: column; gap: 6px; }
+.authField span { color: #8DEEB5; font-size: 14px; }
+.authField input {
+    height: 44px;
+    border-radius: 10px;
+    border: 1px solid #2A2A2A;
+    background: #1C1C1C;
+    color: #EAEAEA;
+    padding: 0 14px;
+}
+.authField input::placeholder { color: #7A7A7A; }
+.authField input:focus { outline: none; border-color: #2EC56D; }
+
+.switchAuth { display: flex; gap: 8px; justify-content: center; color: #EAEAEA; margin-top: 6px; }
+.linkButton {
+    background: transparent;
+    color: #2EC56D;
+    border: none;
+    cursor: pointer;
+    text-decoration: underline;
+}
+.linkButton:hover { color: #27ad5f; }
+
+.authActions { margin-top: 10px; }
+.primaryButton {
+    width: 100%; height: 46px; border-radius: 10px;
+    background: #2EC56D; color: #0B0B0B; border: 1px solid #2EC56D;
+    font-weight: 600; cursor: pointer;
+}
+.primaryButton:hover { background: #27ad5f; border-color: #27ad5f; }
 #footerContent {
     background-color: black;
     width: 100%;
@@ -51,7 +98,7 @@ body {
     color: white;
     padding-top: 20px;
     padding-left: 20px;
-    margin-top: 100%;
+    margin-top: 20px;
 }
 .centerSectionFooter {
     text-align: center;

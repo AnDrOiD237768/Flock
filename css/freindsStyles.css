@@ -56,6 +56,9 @@ body {
     margin-top: 10vh;
     margin-left: 65vh;
 }
+#friendsBlock::-webkit-scrollbar {
+    background-color: #2F3132;
+}
 #friendsBlock h1 {
     color: #2EC56D;
 }

@@ -35,7 +35,87 @@
     </header>
 
     <!--Основной контент-->
-    <section id="mainContent"></section>
+    <section id="mainContent">
+        <!-- Блок фильтров -->
+        <aside id="filters">
+            <h1 class="filtersTitle">Фильтры</h1>
+
+            <div class="filterGroup">
+                <h2 class="filterGroupTitle">Игра</h2>
+                <label class="filterOption game"><input type="checkbox"><img src="../img/dotaLogo.svg" class="gameIcon" alt="Dota 2"><span>Dota 2</span></label>
+                <label class="filterOption game"><input type="checkbox"><img src="../img/cs2Logo.webp" class="gameIcon" alt="Counter-Strike 2"><span>Counter-Strike 2</span></label>
+                <label class="filterOption game"><input type="checkbox"><img src="../img/fortniteLogo.svg" class="gameIcon" alt="Fortnite"><span>Fortnite</span></label>
+                <label class="filterOption game"><input type="checkbox"><img src="../img/LolLogo.svg" class="gameIcon" alt="League of Legends"><span>League of Legends</span></label>
+                <label class="filterOption game"><input type="checkbox"><img src="../img/valorantLogo.svg" class="gameIcon" alt="VALORANT"><span>VALORANT</span></label>
+            </div>
+
+            <div class="filterGroup">
+                <h2 class="filterGroupTitle">Порядочность</h2>
+                <label class="filterOption"><input type="checkbox"> 0 - 2000</label>
+                <label class="filterOption"><input type="checkbox"> 2000 - 4000</label>
+                <label class="filterOption"><input type="checkbox"> 4000 - 6000</label>
+                <label class="filterOption"><input type="checkbox"> 6000 - 8000</label>
+                <label class="filterOption"><input type="checkbox"> 8000 - 10000</label>
+            </div>
+
+            <div class="filterGroup">
+                <h2 class="filterGroupTitle">Язык</h2>
+                <label class="filterOption"><input type="checkbox"> Русский</label>
+                <label class="filterOption"><input type="checkbox"> English</label>
+                <label class="filterOption"><input type="checkbox"> Español</label>
+                <label class="filterOption"><input type="checkbox"> Deutsch</label>
+                <label class="filterOption"><input type="checkbox"> Français</label>
+            </div>
+        </aside>
+
+        <!-- Блок списка игроков -->
+        <div id="players">
+            <h1 class="playersTitle">Игроки</h1>
+            <div class="playersList">
+                <div class="playerCard">
+                    <div class="playerLeft">
+                        <img src="../img/206467454_10953798.png" class="playerAvatar" alt="avatar">
+                        <div class="playerText">
+                            <div class="playerNick">NicknameOne</div>
+                            <div class="playerMeta">
+                                <span class="playerLang">Русский</span>
+                                <span class="playerDecency">10.000</span>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="flockChat.html" class="openChatBtn">Открыть чат</a>
+                </div>
+
+                <div class="playerCard">
+                    <div class="playerLeft">
+                        <img src="../img/206467454_10953798.png" class="playerAvatar" alt="avatar">
+                        <div class="playerText">
+                            <div class="playerNick">ProGamer</div>
+                            <div class="playerMeta">
+                                <span class="playerLang">English</span>
+                                <span class="playerDecency">7.850</span>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="flockChat.html" class="openChatBtn">Открыть чат</a>
+                </div>
+
+                <div class="playerCard">
+                    <div class="playerLeft">
+                        <img src="../img/206467454_10953798.png" class="playerAvatar" alt="avatar">
+                        <div class="playerText">
+                            <div class="playerNick">FortMain</div>
+                            <div class="playerMeta">
+                                <span class="playerLang">Deutsch</span>
+                                <span class="playerDecency">5.420</span>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="flockChat.html" class="openChatBtn">Открыть чат</a>
+                </div>
+            </div>
+        </div>
+    </section>
     <!--Подвал-->
     <footer id="footerContent">
         <p class="centerSectionFooter">FLOCK - service for matching teammates in all popular online games.</p>

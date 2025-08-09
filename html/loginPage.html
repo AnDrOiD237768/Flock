@@ -35,7 +35,40 @@
     </header>
 
     <!--Основной контент-->
-    <section id="mainContent"></section>
+    <section id="mainContent">
+        <div class="authContainer">
+            <div class="authCard">
+                <h1 class="authTitle">Регистрация</h1>
+                <form class="authForm">
+                    <label class="authField">
+                        <span>Ник</span>
+                        <input type="text" placeholder="Введите ник" required>
+                    </label>
+                    <label class="authField">
+                        <span>Электронная почта</span>
+                        <input type="email" placeholder="name@example.com" required>
+                    </label>
+                    <label class="authField">
+                        <span>Пароль</span>
+                        <input type="password" placeholder="Введите пароль" required>
+                    </label>
+                    <label class="authField">
+                        <span>Повторите пароль</span>
+                        <input type="password" placeholder="Повторите пароль" required>
+                    </label>
+
+                    <div class="switchAuth">
+                        <span>Уже есть аккаунт?</span>
+                        <button class="linkButton" type="button">Войти</button>
+                    </div>
+
+                    <div class="authActions">
+                        <button class="primaryButton" type="submit">Зарегистрироваться</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
     <!--Подвал-->
     <footer id="footerContent">
         <p class="centerSectionFooter">FLOCK - service for matching teammates in all popular online games.</p>
